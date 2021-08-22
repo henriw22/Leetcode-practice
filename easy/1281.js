@@ -8,3 +8,6 @@ var subtractProductAndSum = function(n) {
   })
   return digits - sum;
 };
+
+// var subtractProductAndSum = n => 
+// String(n).split('').reduce((a, b) => a * b) - String(n).split('').reduce((a, b) => +a + +b)
