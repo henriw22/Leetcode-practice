@@ -11,3 +11,7 @@ var singleNonDuplicate = function(nums) {
       }
   }
 };
+
+// var singleNonDuplicate = function(nums) {
+//   return nums.reduce((prev, current) => prev ^= current, 0);
+// }
