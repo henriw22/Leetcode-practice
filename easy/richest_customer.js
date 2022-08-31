@@ -8,3 +8,14 @@ var maximumWealth = function(accounts) {
   }
   return result;
 };
+
+var maximumWealth = function(accounts) {
+  let maxWealth = 0;
+  accounts.forEach (e => {
+      const maxSum = e.reduce((partialSum, a) => partialSum + a, 0);
+      if (maxSum > maxWealth) {
+          maxWealth = maxSum
+      }        
+  })
+  return maxWealth;
+};
